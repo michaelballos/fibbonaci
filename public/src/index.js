@@ -1,10 +1,16 @@
-// program to count down numbers to 1
-function countDown(number) {
-    console.log(number);
-    const newNumber = number - 1; 
-    if (newNumber >= 0) {
-        countDown(newNumber);
-    }
-}
-countDown(10); 
- 
+const fibSeq = function fib(num) { 
+  if (num == 1) {
+    return 1; 
+   
+  }
+  if (num == 1) {
+    return 1;
+  }
+  else {
+    return fib(num - 1) + fib(num - 2);
+  }
+};
+
+
+//[1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...]
+
