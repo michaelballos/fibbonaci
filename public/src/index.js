@@ -6,5 +6,10 @@ function fib(num, end) {
   num.push(num[num.length - 2] + num[num.length - 1]);
   return fib(num, end);
 }
-console.log(fib([1,1],10));
+console.log(fib([1,1],20));
 const endArray = ['...'];
+
+/*
+Goal 2 -> write a Write a function that takes in one integer 
+and returns the corresponding number in the fibbonaci sequence
+*/  
