@@ -36,10 +36,12 @@ console.log(fibonacciSpitter(2));
 
 
 //my modified recursive version w correct indexing 
-const slimThick = function skinnyPenis(num) {
-  if (num < 2) //refers to the first two # in sequence --> [1, 1, 2, 3, 5, 8, 13,...]
-  return 1; 
-  return slimThick(num - 2) + slimThick(num - 1);
+function slimThick(index) {
+  if (index < 2) {
+    return(1); 
+  }
+  const sumPreviousTwo = slimThick(index - 1) + slimThick(index - 2);
+  return(sumPreviousTwo);
 };
 console.log('recursive');
 console.log(slimThick(4));
